@@ -16,7 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <nav className="flex justify-between p-2 bg-red-500 text-white">
+            <h1>Maxime Prévot</h1>
+            <h2>MMI</h2>
+          </nav>
+        </header>
+        {children}
+        </body>
     </html>
   );
 }
